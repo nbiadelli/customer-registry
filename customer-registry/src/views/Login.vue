@@ -3,12 +3,7 @@
     <h2 class="c-login__title">Login</h2>
     <form action="" class="c-login__form">
       <div class="c-login__user-field">
-        <input-text 
-          :label="'Usuario'"
-          id="user" 
-          for="user" 
-          type="text" 
-        />
+        <input-text :label="'Usuario'" id="user" for="user" type="text" />
       </div>
       <div class="c-login__user-field">
         <input-text
@@ -34,20 +29,25 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  background-color: $primitives-gray-5;
-  font-family: "Nunito Sans", sans-serif;
-}
-
 .c-login {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  // top: 50%;
   width: 400px;
-  padding: 40px;
-  border-radius: 12px;
+  // border-radius: 12px;
   background-color: $primitives-blue-1;
-  transform: translate(-50%, -50%);
+
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+  // justify-content: center;
+  // align-content: center;
+
+  padding: 6%;
+  margin: 0;
 
   .c-login__title {
     margin: 0 0 30px;
