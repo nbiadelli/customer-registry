@@ -30,9 +30,7 @@ export default {
 
 <style lang="scss">
 .c-login {
-  // top: 50%;
   width: 400px;
-  // border-radius: 12px;
   background-color: $primitives-blue-1;
 
   display: flex;
@@ -43,8 +41,6 @@ export default {
   flex-direction: column;
 
   flex-wrap: wrap;
-  // justify-content: center;
-  // align-content: center;
 
   padding: 6%;
   margin: 0;

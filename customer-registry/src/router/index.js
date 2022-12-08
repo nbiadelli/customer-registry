@@ -1,21 +1,22 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Login from "../views/Login.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Login",
-    component: Login,
+    path: '/',
+    name: 'Login',
+    component: () => import('../views/Login.vue'),
+    meta: { title: 'login' },
   },
-  {
-    path: "/CustomerRegistry",
-    name: "CustomerRegistry",
+  {    
+    path: "/register",
+    name: "Register",
 
     component: () =>
       import("../views/CustomerRegistry.vue"),
+      meta: { title: 'register' },
   },
 ];
 
