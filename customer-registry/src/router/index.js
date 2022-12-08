@@ -18,6 +18,14 @@ const routes = [
       import("../views/CustomerRegistry.vue"),
       meta: { title: 'register' },
   },
+  {    
+    path: "/customer-listing",
+    name: "CustomerListing",
+
+    component: () =>
+      import("../views/CustomerListing.vue"),
+      meta: { title: 'customer-listing' },
+  },
 ];
 
 const router = new VueRouter({
